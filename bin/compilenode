@@ -179,9 +179,12 @@ INCLUDE_PATH="$VENDORED_NODE/include"
 export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 
-# install dependencies with npm
+# install grunt with npm
 echo "-----> Installing global dependencies with npm"
-run_npm "install -g grunt"
+run_npm "install -g grunt --silent"
+
+# install other node dependencies with npm
+echo "-----> Installing global dependencies with npm"
 run_npm "install --production --silent"
 echo "Dependencies installed" | indent
 
@@ -189,6 +192,7 @@ echo "Dependencies installed" | indent
 echo "-----> Installing grunt dependencies with npm"
 cd build
 run_grunt_npm "install --production --silent"
+echo "-----> Running Grunt"
 grunt
 cd ../
 echo "Dependencies installed" | indent
