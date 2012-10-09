@@ -14,6 +14,8 @@ Use the following command (more info [here](https://devcenter.heroku.com/article
 
 The buildpack expects that you set a package.json file at your project's root for node/npm configuration, and keep a separate package.json alongside your gruntfile in `/build`.
 
+On deploy to heroku, this configuration installs grunt globally, and will run `npm install` at the root and `/build` level.
+
 License
 -------
 
