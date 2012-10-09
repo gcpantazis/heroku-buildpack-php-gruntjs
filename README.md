@@ -1,4 +1,4 @@
-Apache + PHP + Grunt
+Heroku: Apache + PHP + Grunt
 ====================
 
 This is a buildpack combining the [PHP](https://github.com/heroku/heroku-buildpack-php) and [NodeJS](https://github.com/heroku/heroku-buildpack-nodejs) buildpacks, which allows for an on-deploy Grunt build.
