@@ -183,14 +183,12 @@ export CPPPATH="$INCLUDE_PATH"
 echo "-----> Installing global dependencies with npm"
 run_npm "install -g grunt"
 run_npm "install --production --silent"
-run_npm "rebuild"
 echo "Dependencies installed" | indent
 
 # install dependencies with npm
 echo "-----> Installing grunt dependencies with npm"
 cd build
 run_grunt_npm "install --production --silent"
-run_grunt_npm "rebuild"
 grunt
 cd ../
 echo "Dependencies installed" | indent
