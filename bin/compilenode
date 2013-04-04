@@ -181,7 +181,7 @@ export CPPPATH="$INCLUDE_PATH"
 
 # install grunt with npm
 echo "-----> Installing global dependencies with npm"
-run_npm "install -g grunt --silent"
+run_npm "install -g grunt-cli --silent"
 
 # install other node dependencies with npm
 echo "-----> Installing global dependencies with npm"
